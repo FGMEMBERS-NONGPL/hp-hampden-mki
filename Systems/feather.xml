@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+
+<system name="feather">
+
+  <channel name="propeller1">
+
+     <switch name="systems/feather/feather1-step1">
+          <default value="propulsion/engine[0]/constant-speed-mode"/>
+          <test value="0">
+                systems/feather/engine1-feathered == 1
+          </test>
+          <output>propulsion/engine[0]/constant-speed-mode</output>
+     </switch>
+
+     <switch name="systems/feather/feather1-step2">
+          <default value="propulsion/engine[0]/blade-angle-command"/>
+          <test value="90">
+                systems/feather/engine1-feathered == 1
+                propulsion/engine[0]/constant-speed-mode == 0
+          </test>
+          <output>propulsion/engine[0]/blade-angle-command</output>
+     </switch>
+
+     <kinematic name="feather1 control">
+       <input>propulsion/engine[0]/blade-angle-command</input>
+       <traverse>
+         <setting>
+            <position> 0 </position>
+            <time>     0 </time>
+         </setting>
+         <setting>
+            <position> 90 </position>
+            <time>     4 </time>
+         </setting>
+       </traverse>
+       <output>propulsion/engine[0]/blade-angle</output>
+     </kinematic>
+
+     <switch name="systems/feather/unfeather1">
+          <default value="propulsion/engine[0]/constant-speed-mode"/>
+          <test value="1">
+                systems/feather/engine1-feathered == 0
+          </test>
+          <output>propulsion/engine[0]/constant-speed-mode</output>
+     </switch>
+
+  </channel>
+
+  <channel name="propeller2">
+
+     <switch name="systems/feather/feather2-step1">
+          <default value="propulsion/engine[1]/constant-speed-mode"/>
+          <test value="0">
+                systems/feather/engine2-feathered eq 1
+          </test>
+          <output>propulsion/engine[1]/constant-speed-mode</output>
+     </switch>
+
+     <switch name="systems/feather/feather2-step2">
+          <default value="propulsion/engine[1]/blade-angle-command"/>
+          <test value="90">
+                systems/feather/engine2-feathered eq 1
+                propulsion/engine[1]/constant-speed-mode eq 0
+          </test>
+          <output>propulsion/engine[1]/blade-angle-command</output>
+     </switch>
+
+     <kinematic name="feather2 control">
+       <input>propulsion/engine[1]/blade-angle-command</input>
+       <traverse>
+         <setting>
+            <position> 0 </position>
+            <time>     0 </time>
+         </setting>
+         <setting>
+            <position> 90 </position>
+            <time>     4 </time>
+         </setting>
+       </traverse>
+       <output>propulsion/engine[1]/blade-angle</output>
+     </kinematic>
+
+     <switch name="systems/feather/unfeather2">
+          <default value="propulsion/engine[1]/constant-speed-mode"/>
+          <test value="1">
+                systems/feather/engine2-feathered eq 0
+          </test>
+          <output>propulsion/engine[1]/constant-speed-mode</output>
+     </switch>
+
+  </channel>
+
+  <channel name="propeller3">
+
+     <switch name="systems/feather/feather3-step1">
+          <default value="propulsion/engine[2]/constant-speed-mode"/>
+          <test value="0">
+                systems/feather/engine3-feathered eq 1
+          </test>
+          <output>propulsion/engine[2]/constant-speed-mode</output>
+     </switch>
+
+     <switch name="systems/feather/feather3-step2">
+          <default value="propulsion/engine[2]/blade-angle-command"/>
+          <test value="90">
+                systems/feather/engine3-feathered eq 1
+                propulsion/engine[2]/constant-speed-mode eq 0
+          </test>
+          <output>propulsion/engine[2]/blade-angle-command</output>
+     </switch>
+
+     <kinematic name="feather3 control">
+       <input>propulsion/engine[2]/blade-angle-command</input>
+       <traverse>
+         <setting>
+            <position> 0 </position>
+            <time>     0 </time>
+         </setting>
+         <setting>
+            <position> 90 </position>
+            <time>     4 </time>
+         </setting>
+       </traverse>
+       <output>propulsion/engine[2]/blade-angle</output>
+     </kinematic>
+
+     <switch name="systems/feather/unfeather3">
+          <default value="propulsion/engine[2]/constant-speed-mode"/>
+          <test value="1">
+                systems/feather/engine3-feathered eq 0
+          </test>
+          <output>propulsion/engine[2]/constant-speed-mode</output>
+     </switch>
+
+  </channel>
+
+  <channel name="propeller4">
+
+     <switch name="systems/feather/feather4-step1">
+          <default value="propulsion/engine[3]/constant-speed-mode"/>
+          <test value="0">
+                systems/feather/engine4-feathered eq 1
+          </test>
+          <output>propulsion/engine[3]/constant-speed-mode</output>
+     </switch>
+
+     <switch name="systems/feather/feather4-step2">
+          <default value="propulsion/engine[3]/blade-angle-command"/>
+          <test value="90">
+                systems/feather/engine4-feathered eq 1
+                propulsion/engine[3]/constant-speed-mode eq 0
+          </test>
+          <output>propulsion/engine[3]/blade-angle-command</output>
+     </switch>
+
+     <kinematic name="feather4 control">
+       <input>propulsion/engine[3]/blade-angle-command</input>
+       <traverse>
+         <setting>
+            <position> 0 </position>
+            <time>     0 </time>
+         </setting>
+         <setting>
+            <position> 90 </position>
+            <time>     4 </time>
+         </setting>
+       </traverse>
+       <output>propulsion/engine[3]/blade-angle</output>
+     </kinematic>
+
+     <switch name="systems/feather/unfeather4">
+          <default value="propulsion/engine[3]/constant-speed-mode"/>
+          <test value="1">
+                systems/feather/engine4-feathered eq 0
+          </test>
+          <output>propulsion/engine[3]/constant-speed-mode</output>
+     </switch>
+
+  </channel>
+
+
+
+</system>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<name>bombadier</name>
+	<path>bombadier.ac</path>
+
+	<!-- De-select when in view 101 -->
+	<animation>
+		<type>select</type>
+		<object-name>bombadier</object-name>
+		<condition>
+			<not>
+				<equals>
+					<property>sim/current-view/view-number</property>
+					<value>101</value>
+				</equals>
+			</not>
+		</condition>
+	</animation>
+
+</PropertyList>

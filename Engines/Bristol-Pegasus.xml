@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+  File:     Bristol-Pagasus.xml
+  Author:   Aero-Matic v 0.81
+
+  Inputs:
+    name:           Bristol-Pagasus
+    type:           piston
+    power:          1000.0 hp
+    augmented?      no
+    injected?       no
+-->
+
+<piston_engine name="Bristol-Pagasus">
+  <displacement unit="IN3"> 1753 </displacement>
+  <maxmp unit="INHG">    46.0   </maxmp>	
+  <maxhp>               1000     </maxhp>
+  <cycles>                4     </cycles>
+  <bore unit="IN">        5.75  </bore>
+  <stroke unit="IN">      7.5  </stroke>
+  <cylinders>            9     </cylinders>
+  <cylinder-head-mass> 73 </cylinder-head-mass>
+  <compression-ratio>     7.00  </compression-ratio>  
+  <bsfc>                  0.50   </bsfc>
+  <volumetric-efficiency> 0.795 </volumetric-efficiency>
+  <cooling-factor> 0.91 </cooling-factor>  
+  <idlerpm>             500 </idlerpm>
+  <maxrpm>             2600 </maxrpm>
+  <maxthrottle>           1.0 </maxthrottle>
+  <minthrottle>           0.1 </minthrottle>
+  <sparkfaildrop>         0.0 </sparkfaildrop>
+  <numboostspeeds>        1   </numboostspeeds>
+  <boostoverride>         0   </boostoverride>
+
+  <ratedboost1>     9.15 </ratedboost1> 
+  <ratedpower1>    1000    </ratedpower1>
+  <ratedrpm1>      2600    </ratedrpm1>
+  <ratedaltitude1> 15000    </ratedaltitude1>
+
+  <takeoffboost>  0   </takeoffboost>
+</piston_engine>

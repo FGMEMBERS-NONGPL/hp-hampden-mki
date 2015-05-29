@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<!-- B-17 bombsight, by Dave Culp -->
+
+<PropertyList>
+
+ <path>bombsight.ac</path>
+
+
+ <!-- pipper on/off -->
+ <animation>
+  <type>select</type>
+  <object-name>pipper</object-name>
+  <condition>
+   <property>controls/armament/gunsight/power-on</property>
+  </condition>
+ </animation>  
+
+ <!-- pipper brightness -->
+ <animation>
+  <type>material</type>
+  <object-name>pipper</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>1.0</green>
+   <blue>1.0</blue>
+   <factor-prop>controls/armament/gunsight/intensity</factor-prop>
+  </emission>
+ </animation>
+
+ <!-- roll compensation -->
+ <animation>
+  <type>rotate</type>
+  <object-name>pipper</object-name>
+  <property>orientation/roll-deg</property>
+  <factor>-1</factor>
+  <center>
+   <x-m> 0.0</x-m>
+   <y-m> 0.0</y-m>
+   <z-m> 0.0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>pipper</object-name>
+  <property>orientation/roll-deg</property>
+  <factor>1</factor>
+  <center>
+   <x-m> 0.0</x-m>
+   <y-m> 0.0</y-m>
+   <z-m> 1.213</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+
+ <!-- *** LoD *** -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>50</max-m>
+ </animation>
+
+</PropertyList>

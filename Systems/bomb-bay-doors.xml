@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<system name="bomb-bay-doors">
+
+  <channel name="Control">
+
+   <kinematic name="Doors">
+     <input>systems/bomb-bay-doors/door-cmd-norm</input>
+     <traverse>
+       <setting>
+          <position> 0 </position>
+          <time>     0 </time>
+       </setting>
+       <setting>
+          <position> 1 </position>
+          <time>     5 </time>
+       </setting>
+     </traverse>
+     <output>systems/bomb-bay-doors/door-pos-norm</output>
+     <output>/sim/multiplay/generic/float[16]</output>
+   </kinematic>
+
+  </channel>
+
+</system>

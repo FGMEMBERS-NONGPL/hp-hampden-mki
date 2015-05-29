@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<system name="bombsight">
+
+  <property value="0">systems/bombsight/target-elevation</property>
+
+  <channel name="Main">
+
+       <!-- compute height above target -->
+       <summer name="systems/bombsight/height-above-target">
+          <input>position/h-sl-ft</input>
+          <input>-systems/bombsight/target-elevation</input>
+       </summer>
+
+
+       <!-- look up bomb horizontal distance, based on altitude and speed --> 
+       <fcs_function name="distance_computer">
+         <function>
+            <table>
+              <independentVar lookup="row">systems/bombsight/height-above-target</independentVar>
+              <independentVar lookup="column">velocities/vc-kts</independentVar>
+              <tableData>
+                      140     160     180
+               0      0       0       0     
+               10000  7636    7636    7636   
+               15000  10018   10018   10018  
+               20000  12402   12402   12402 
+               25000  15128   15128   15128 
+               30000  17877   17877   17877 
+              </tableData>
+            </table>
+         </function>
+         <output>systems/bombsight/distance</output>
+       </fcs_function>
+
+       <!-- sight depression angle, including alpha -->
+       <fcs_function name="angle_computer">
+         <function>
+            <sum>
+            <atan>
+              <quotient>
+                 <property>systems/bombsight/height-above-target</property>
+                 <property>systems/bombsight/distance</property>
+              </quotient>
+            </atan>
+            <property>/orientation/alpha-deg</property>
+            </sum>
+         </function>
+         <output>systems/bombsight/sight-depress</output>
+       </fcs_function>
+
+<!--
+       <fcs_function name="pipper-slew-meters">
+         <function>
+
+         </function>
+       </fcs_function>
+-->
+
+  </channel>
+
+</system>

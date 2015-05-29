@@ -1,0 +1,1198 @@
+<?xml version="1.0"?>
+
+<!-- HAndley-Page Hampden Mk1, an FS2004 to FlightGear conversion of Edward Cook's Hampden, with permission, by LesterBoffo -->
+
+<PropertyList>
+
+ <path>hampden-Mk11.ac</path>
+
+  <!-- nasal>
+    <load>
+      var update = aircraft.overlay_update.new();
+      update.add("Aircraft/Bristol-blenheim-Mk1/Models/AI-Liveries", "sim/model/livery/file");
+      update.add("Aircraft/Generic/Logos", "sim/multiplay/generic/string");
+    </load>
+    <unload>
+      update.stop();
+    </unload>
+  </nasal! -->
+
+	<!-- animation>
+  <object-name>cockpit</object-name>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>19</max-m>
+	</animation -->
+
+<effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+      <object-name>canopyglass</object-name>
+	<object-name>fuseglass</object-name>
+	<object-name>lowturretglass</object-name>
+      <object-name>turretglass</object-name>
+      <object-name>navlightglass</object-name>
+	<object-name>nav-skylight</object-name>
+	<object-name>landlightlens</object-name>
+      <object-name>wind-wings2</object-name>
+      <object-name>windshield</object-name>
+      <object-name>rightprop-disc</object-name>
+      <object-name>leftprop-disc</object-name>  
+    </effect>
+
+ <animation>
+    <!-- Objets opaques -->
+    <object-name>leftspinner</object-name>
+    <object-name>leftprop</object-name>
+    <object-name>leftengine</object-name>
+    <object-name>leftcowl</object-name>
+    <object-name>leftnacelle</object-name>
+    <object-name>leftwing</object-name>
+    <object-name>leftaileron</object-name>
+    <object-name>leftflap</object-name>
+    <object-name>rightspinner</object-name>
+    <object-name>rightprop</object-name>
+    <object-name>rightengine</object-name>
+    <object-name>rightcowl</object-name>
+    <object-name>rightnacelle</object-name>
+    <object-name>rightwing</object-name>
+    <object-name>rightaileron</object-name>
+    <object-name>rightflap</object-name>
+    <object-name>panel</object-name>
+    <object-name>rightstab</object-name>
+    <object-name>pilot'sseat</object-name>
+    <object-name>fuselage</object-name>
+    <object-name>interior-floor</object-name>
+    <object-name>antennae-wire</object-name>
+    <object-name>enginebacks</object-name>
+    <object-name>leftelev</object-name>
+    <object-name>leftstab</object-name>
+    <object-name>leftfin</object-name>
+    <object-name>leftrudder</object-name>
+    <object-name>leftrudder-trim</object-name>
+    <object-name>landinglight-house</object-name>
+    <object-name>canopy</object-name>
+    <object-name>compass</object-name>
+    <object-name>bigguage</object-name>
+    <object-name>bombaydoor-facia</object-name>
+    <object-name>leftmixt-lever</object-name>
+    <object-name>rightmixt-lever</object-name>
+    <object-name>rightpitch</object-name>
+    <object-name>leftpitch</object-name>
+    <object-name>left-throttle</object-name>
+    <object-name>right-throttle</object-name>
+    <object-name>misc-lever</object-name>
+    <object-name>thottquadface</object-name>
+    <object-name>canopylver</object-name>
+    <object-name>elevtrimwheel</object-name>
+    <object-name>FX_LOD_100</object-name>
+    <object-name>bombbaycrank</object-name>
+    <object-name>rudderbar</object-name>
+    <object-name>yokestand</object-name>
+    <object-name>yoke</object-name>
+    <object-name>gun-trigger</object-name>
+    <object-name>triggerguard</object-name>
+    <object-name>canopyframe</object-name>
+    <object-name>R-Lmaindoor</object-name>
+    <object-name>L-Lmaindoor</object-name>
+    <object-name>L-Rmaindoor</object-name>
+    <object-name>R-Rmaindoor</object-name>
+    <object-name>leftwheel</object-name>
+    <object-name>leftmain-low</object-name>
+    <object-name>leftmain-up</object-name>
+    <object-name>leftmain-levers2</object-name>
+    <object-name>leftmain-levers</object-name>
+    <object-name>rightwheel</object-name>
+    <object-name>rightmain-low</object-name>
+    <object-name>rightmain-up</object-name>
+    <object-name>rightmain-levers2</object-name>
+    <object-name>rightmain-levers</object-name>
+    <object-name>tailwheel</object-name>
+    <object-name>vorloop</object-name>
+    <object-name>turretframe</object-name>
+    <object-name>turretglass</object-name>
+    <object-name>lowturret-periphrial</object-name>
+    <object-name>porteGE</object-name>
+    <object-name>porteGI</object-name>
+    <object-name>porteDE</object-name>
+    <object-name>porteDI</object-name>
+    <object-name>bolG</object-name>
+    <object-name>bolD</object-name>
+    <object-name>tourtourelle</object-name>
+    <object-name>tmp</object-name>
+    <object-name>porteGE</object-name>
+    <object-name>porteGI</object-name>
+    <object-name>porteDE</object-name>
+    <object-name>porteDI</object-name>
+    <object-name>bolG</object-name>
+    <object-name>bolD</object-name>
+    <object-name>tourtourelle</object-name>
+    <object-name>tmp</object-name>
+    <object-name>porteGE</object-name>
+    <object-name>porteGI</object-name>
+    <object-name>porteDE</object-name>
+    <object-name>porteDI</object-name>
+    <object-name>bolG</object-name>
+    <object-name>bolD</object-name>
+    <object-name>tourtourelle</object-name>
+    <object-name>tmp</object-name>
+    <object-name>porteGE</object-name>
+    <object-name>porteGI</object-name>
+    <object-name>porteDE</object-name>
+    <object-name>porteDI</object-name>
+    <object-name>bolG</object-name>
+    <object-name>bolD</object-name>
+    <object-name>tourtourelle</object-name>
+    <object-name>tmp</object-name>
+
+    <object-name>axeG</object-name>
+    <object-name>roueG</object-name>
+    <object-name>axeD</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueA</object-name>
+    <object-name>heliceG</object-name>
+    <object-name>heliceD</object-name>
+    <object-name>trous</object-name>
+   </animation>
+
+ <!-- *********************** Stores **************************** -->
+
+
+
+ <!-- Bomb, 250 lb., station 5 (left bomb bay) -->
+ <model>
+   <path>Aircraft/DavePack/Stores/M57/bomb5.xml</path>
+   <offsets>
+     <x-m>-0.18</x-m>
+     <y-m>-0.324</y-m>
+     <z-m>-0.78</z-m>
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+
+ <!-- Bomb, 250 lb., station 10 (right bomb bay) -->
+ <model>
+   <path>Aircraft/DavePack/Stores/M57/bomb5.xml</path>
+   <offsets>
+     <x-m>-0.18</x-m>
+     <y-m> 0.324</y-m>
+     <z-m>-0.78</z-m>
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+
+ <!-- Bomb, 250 lb., station 6 (left bomb bay) -->
+ <model>
+   <path>Aircraft/DavePack/Stores/M57/bomb5.xml</path>
+   <offsets>
+     <x-m>-0.88</x-m>
+     <y-m>-0.324</y-m>
+     <z-m>-0.78</z-m>
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+
+ <!-- Bomb, 250 lb., station 9 (right bomb bay) -->
+ <model>
+   <path>Aircraft/DavePack/Stores/M57/bomb5.xml</path>
+   <offsets>
+     <x-m>-0.88</x-m>
+     <y-m> 0.324</y-m>
+     <z-m>-0.78</z-m>
+     <pitch-deg>0</pitch-deg>
+   </offsets>
+ </model>
+
+ <!-- Crew members -->
+
+<model>
+    <path>Aircraft/hp-hampden-mki/Models/Pilot/pilotA.xml</path>
+    <offsets>
+      <x-m> -1.40 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.332 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/hp-hampden-mki/Models/Pilot/bombadier.xml</path>
+    <offsets>
+      <x-m> -2.80 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> -0.483</z-m>
+      <pitch-deg> 3 </pitch-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <path>Aircraft/hp-hampden-mki/Models/Pilot/gunnerA.xml</path>
+    <offsets>
+      <x-m> 1.802 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.354 </z-m>
+      <heading-deg>180</heading-deg>
+      <pitch-deg> 12 </pitch-deg>
+    </offsets>
+  </model>
+
+<!-- *********** Bombardier's Instruments ***************-->
+
+ <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Bombsight/bombsight.xml</path>
+  <offsets>
+   <x-m>-4.04</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.29</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/DavePack/Instruments/Alt/version2/altimeter.xml</path>
+  <offsets>
+   <x-m>-4.028</x-m>
+   <y-m>-0.235</y-m>
+   <z-m>-0.29</z-m>
+   <pitch-deg> -53 </pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/DavePack/Instruments/AI/AI.xml</path>
+  <offsets>
+   <x-m>-4.028</x-m>
+   <y-m>0.215</y-m>
+   <z-m>-0.29</z-m>
+   <pitch-deg> -53 </pitch-deg>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/DavePack/Instruments/RDMI/RDMI.xml</path>
+  <offsets>
+   <x-m>-4.128</x-m>
+   <y-m>-0.05</y-m>
+   <z-m>-0.29</z-m>
+   <pitch-deg> -53 </pitch-deg>
+  </offsets>
+ </model>
+
+
+
+ <!-- *********************** Effects *************************** -->
+
+
+ <!-- model>
+  <path>Aircraft/DavePack/Effects/Vortex/condensation-left.xml</path>
+   <offsets>
+     <x-m> 0.26</x-m>
+     <y-m>-5.56</y-m>
+     <z-m> 0.30</z-m>
+   </offsets>
+ </model -->
+
+ <!-- model>
+  <path>Aircraft/DavePack/Effects/Vortex/condensation-right.xml</path>
+   <offsets>
+     <x-m> 0.26</x-m>
+     <y-m> 5.56</y-m>
+     <z-m> 0.30</z-m>
+   </offsets>
+ </model -->
+
+
+  <!-- Smoke (left engine, left exhaust stack)) -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Effects/smoke.xml</path>
+    <offsets>
+      <x-m> -1.074 </x-m>
+      <y-m> -3.057 </y-m>
+      <z-m> -0.422 </z-m>
+      <pitch-deg> -8 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Smoke (left engine, right exhaust stack) -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Effects/smoke.xml</path>
+    <offsets>
+      <x-m> -1.074 </x-m>
+      <y-m> -1.614 </y-m>
+      <z-m> -0.422 </z-m>
+      <pitch-deg> -8 </pitch-deg>
+    </offsets>
+  </model>
+  <!-- Smoke (right engine, right exhaust stack) -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Effects/smoke.xml</path>
+    <offsets>
+      <x-m> -1.074 </x-m>
+      <y-m> 3.057 </y-m>
+      <z-m> -0.422 </z-m>
+      <pitch-deg> -8 </pitch-deg>
+    </offsets>
+  </model>
+  <!-- Smoke (right engine, left exhaust stack) -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Effects/smoke.xml</path>
+    <offsets>
+      <x-m> -1.074 </x-m>
+      <y-m> 1.614 </y-m>
+      <z-m> -0.422 </z-m>
+      <pitch-deg> -8 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Panel/panel.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>
+	
+ <animation>
+  <type>rotate</type>
+  <object-name>yokestand</object-name>
+  <object-name>yoke</object-name>
+  <object-name>gun-trigger</object-name>
+  <object-name>triggerguard</object-name> 
+  <property>controls/flight/elevator</property>
+  <factor>-10</factor>
+  <center>
+   <x-m>-1.806</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0.001</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>yoke</object-name>
+  <object-name>gun-trigger</object-name>
+  <object-name>triggerguard</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>-59</factor>
+  <center>
+   <x-m>-1.76</x-m>
+   <y-m> 0.0 </y-m>
+   <z-m> 0.5735</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<!--  throttle pitch mixture and LG controls animation -->
+
+
+<!-- Main LG animations -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>leftmain-up</object-name>
+  <object-name>leftmain-low</object-name>
+  <object-name>leftmain-levers</object-name>
+  <object-name>leftmain-levers2</object-name>
+  <object-name>leftwheel</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+<entry>
+    <ind>0.0</ind>
+    <dep>95</dep>
+   </entry>
+   <entry>
+    <ind>0.4</ind>
+    <dep>48</dep>
+   </entry>
+    <entry>
+    <ind>1.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.312</x-m>
+   <y-m>-2.72</y-m>
+   <z-m>-0.50</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>translate</type>
+  <object-name>maingear-leftup</object-name>
+  <object-name>maingear-leftlow</object-name>
+  <object-name>leftmain-levers</object-name>
+  <object-name>leftwheel</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+<entry>
+    <ind>0.0</ind>
+    <dep>0.294</dep>
+   </entry>
+   <entry>
+    <ind>0.74</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.783</x-m>
+   <y-m>-2.72</y-m>
+   <z-m>-0.89</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>leftmain-levers2</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+<entry>
+    <ind>0.0</ind>
+    <dep>-135</dep>
+   </entry>
+   <entry>
+    <ind>0.34</ind>
+    <dep>-27</dep>
+   </entry>
+    <entry>
+    <ind>1.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.231</x-m>
+   <y-m>-2.712</y-m>
+   <z-m>-1.36</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>translate</type>
+  <property>gear/gear[0]/compression-norm</property>
+  <object-name>leftmain-levers</object-name>
+  <object-name>leftmain-low</object-name>
+  <object-name>leftwheel</object-name>
+  <interpolation>
+   <entry> <ind>0</ind> <dep>0.0</dep> </entry>
+   <entry> <ind>0.33</ind> <dep>0.059</dep> </entry>
+   <entry> <ind>0.66</ind> <dep>0.128</dep> </entry>
+   <entry> <ind>1.00</ind> <dep>0.197</dep> </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.312</x-m>
+   <y-m>-2.71</y-m>
+   <z-m>-0.89</z-m>
+  </center>
+  <axis>
+      <x> 0</x>
+      <y> 0 </y>
+      <z> 1 </z>
+  </axis> 
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-Lmaindoor</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+  <entry>
+  <ind>1.0</ind>
+    <dep>86</dep>
+   </entry>
+   <entry>
+    <ind>0.13</ind>
+    <dep>78</dep>
+   </entry>
+    <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.27</x-m>
+   <y-m>-3.06</y-m>
+   <z-m>-0.61</z-m>
+  </center>
+  <axis>
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>L-Rmaindoor</object-name>
+  <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+  <entry>
+  <ind>1.0</ind>
+    <dep>-86</dep>
+   </entry>
+   <entry>
+    <ind>0.13</ind>
+    <dep>-78</dep>
+   </entry>
+    <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.27</x-m>
+   <y-m>-2.37</y-m>
+   <z-m>-0.61</z-m>
+  </center>
+  <axis>
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>rightmain-up</object-name>
+  <object-name>rightmain-low</object-name>
+  <object-name>rightmain-levers</object-name>
+  <object-name>rightmain-levers2</object-name>
+  <object-name>rightwheel</object-name>
+  <property>gear/gear[1]/position-norm</property>
+   <interpolation>
+<entry>
+    <ind>0.0</ind>
+    <dep>94</dep>
+   </entry>
+   <entry>
+    <ind>0.4</ind>
+    <dep>49</dep>
+   </entry>
+    <entry>
+    <ind>1.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.312</x-m>
+   <y-m> 2.72</y-m>
+   <z-m>-0.50</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>translate</type>
+  <object-name>maingear-rightup</object-name>
+  <object-name>maingear-rightlow</object-name>
+  <object-name>maingear-Rlevers</object-name>
+  <object-name>rightwheel</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+<entry>
+    <ind>0.0</ind>
+    <dep>0.094</dep>
+   </entry>
+   <entry>
+    <ind>0.84</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.783</x-m>
+   <y-m>2.36</y-m>
+   <z-m>-0.89</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>rightmain-levers2</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+<entry>
+    <ind>0.0</ind>
+    <dep>-125</dep>
+   </entry>
+   <entry>
+    <ind>0.34</ind>
+    <dep>-27</dep>
+   </entry>
+    <entry>
+    <ind>1.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.231</x-m>
+   <y-m> 2.712</y-m>
+   <z-m>-1.36</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>translate</type>
+  <property>gear/gear[1]/compression-norm</property>
+  <object-name>rightmain-levers</object-name>
+  <object-name>rightmain-low</object-name>
+  <object-name>rightwheel</object-name>
+  <interpolation>
+   <entry> <ind>0</ind> <dep>0.0</dep> </entry>
+   <entry> <ind>0.33</ind> <dep>0.059</dep> </entry>
+   <entry> <ind>0.66</ind> <dep>0.128</dep> </entry>
+   <entry> <ind>1.00</ind> <dep>0.197</dep> </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.366</x-m>
+   <y-m>2.71</y-m>
+   <z-m>-0.89</z-m>
+  </center>
+  <axis>
+      <x> 0</x>
+      <y> 0 </y>
+      <z> 1 </z>
+  </axis> 
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>R-Rmaindoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+  <entry>
+  <ind>1.0</ind>
+    <dep>-86</dep>
+   </entry>
+   <entry>
+    <ind>0.13</ind>
+    <dep>-78</dep>
+   </entry>
+    <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.27</x-m>
+   <y-m> 3.06</y-m>
+   <z-m>-0.61</z-m>
+  </center>
+  <axis>
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>R-Lmaindoor</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+  <entry>
+  <ind>1.0</ind>
+    <dep>86</dep>
+   </entry>
+   <entry>
+    <ind>0.13</ind>
+    <dep>78</dep>
+   </entry>
+    <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.77</x-m>
+   <y-m> 2.37</y-m>
+   <z-m>-0.61</z-m>
+  </center>
+  <axis>
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>leftwheel</object-name>
+  <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> -26 </factor>
+  <center>
+   <x-m>-0.307</x-m>
+   <y-m>-2.721</y-m>
+   <z-m>-1.866</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>rightwheel</object-name>
+  <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> -26 </factor>
+  <center>
+   <x-m>-0.307</x-m>
+   <y-m>2.721</y-m>
+   <z-m>-1.866</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>translate</type>
+  <property>gear/gear[2]/compression-norm</property>
+  <object-name>tailwheel</object-name>
+  <object-name>tailgear</object-name>
+  <object-name>tailpiston</object-name>>
+  <interpolation>
+   <entry> <ind>0</ind> <dep>0.0</dep> </entry>
+   <entry> <ind>0.33</ind> <dep>0.033</dep> </entry>
+   <entry> <ind>0.66</ind> <dep>0.064</dep> </entry>
+   <entry> <ind>1.00</ind> <dep>0.098</dep> </entry>
+  </interpolation>
+  <center>
+   <x-m>7.11</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.07</z-m>
+  </center>
+  <axis>
+      <x> 0</x>
+      <y> 0 </y>
+      <z> 1 </z>
+  </axis> 
+ </animation>
+
+<animation>
+    <type>rotate</type>
+   <object-name>tailwheel</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 30 </factor>
+    <center>
+   <x-m>9.601</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.140</z-m>
+    </center>
+    <axis>
+      <x> 0</x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+<!-- animation>
+  <type>spin</type>
+  <object-name>tailwheel</object-name>
+  <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 23 </factor>
+  <center>
+   <x-m>7.327</x-m>
+   <y-m>2.362</y-m>
+   <z-m>-0.61</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation -->
+
+<!-- flight surfaces -->
+
+<animation>
+  <type>rotate</type>
+  <object-name>rightflap</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>36.0</factor>
+  <axis>
+   <x1-m>3.317</x1-m>
+   <y1-m>1.002</y1-m>
+   <z1-m>-0.203</z1-m>
+   <x2-m>2.021</x2-m>
+   <y2-m>5.307</y2-m>
+   <z2-m>0.00</z2-m>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>leftflap</object-name>
+  <property>surface-positions/flap-pos-norm</property>
+  <factor>-36.0</factor>>
+  <axis>
+   <x1-m>3.317</x1-m>
+   <y1-m>-1.002</y1-m>
+   <z1-m>-0.203</z1-m>
+   <x2-m>2.021</x2-m>
+   <y2-m>-5.307</y2-m>
+   <z2-m>0.00</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>leftaileron</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>-18.0</factor>
+  <axis>
+  <x1-m>1.845</x1-m>
+   <y1-m>-5.293</y1-m>
+   <z1-m>-0.195</z1-m>
+   <x2-m>0.277</x2-m>
+   <y2-m>-10.103</y2-m>
+   <z2-m>0.623</z2-m>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>rightaileron</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>-18.0</factor>
+  <axis>
+   <x1-m>1.845</x1-m>
+   <y1-m>5.293</y1-m>
+   <z1-m>-0.01</z1-m>
+   <x2-m>0.277</x2-m>
+   <y2-m>10.103</y2-m>
+   <z2-m>0.623</z2-m>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>leftrudder</object-name>
+  <object-name>leftrudder-trim</object-name>
+  <property>surface-positions/rudder-pos-norm</property>
+  <factor>30.0</factor>
+  <center>
+   <x-m> 11.013 </x-m>
+   <y-m> -2.464 </y-m>
+   <z-m> 0.73 </z-m>
+  </center>
+   <axis>
+   <x>0.000000</x>
+   <y>0.000000</y>
+   <z>1.000000</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>right-rudder</object-name>
+  <object-name>rightrudd-trim</object-name>
+  <property>surface-positions/rudder-pos-norm</property>
+  <factor>30.0</factor>
+  <center>
+   <x-m> 11.013 </x-m>
+   <y-m> 2.464 </y-m>
+   <z-m> 0.73 </z-m>
+  </center>
+   <axis>
+   <x>0.000000</x>
+   <y>0.000000</y>
+   <z>1.000000</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>leftelev</object-name>
+  <property>surface-positions/elevator-pos-norm</property>
+  <interpolation>
+   <entry>
+    <ind>-1.0</ind>
+    <dep>-20.0</dep>
+   </entry>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>20.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>11.00</x-m>
+   <y-m>1.159</y-m>
+   <z-m>0.4985</z-m>
+  </center>
+  <axis>
+   <x>0.00</x>
+   <y>1.00</y>
+   <z>0.00</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>rightelev</object-name>
+  <property>surface-positions/elevator-pos-norm</property>
+  <interpolation>
+   <entry>
+    <ind>-1.0</ind>
+    <dep>-20.0</dep>
+   </entry>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>20.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>11.00</x-m>
+   <y-m>-1.159</y-m>
+   <z-m>0.4985</z-m>
+  </center>
+  <axis>
+   <x>0.000000</x>
+   <y>1.000000</y>
+   <z>0.000000</z>
+  </axis>
+ </animation>
+
+<!-- canopy opening -->
+
+ <animation>
+  <type>translate</type>
+  <object-name>canopyframe</object-name>
+  <object-name>canopyglass</object-name>
+  <property>canopy/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>0.529</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-1.20</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.992</z-m>
+  </center>
+  <axis>
+   <x>1.000</x>
+   <y>0.000</y>
+   <z>0.000</z>
+   </axis>
+ </animation>
+
+<!-- prop animations -->
+	
+ <animation>
+  <type>spin</type>
+  <object-name>leftprop</object-name>
+  <object-name>leftspinner</object-name>
+  <object-name>leftprop-disc</object-name>
+  <property>engines/engine[0]/rpm</property>
+  <factor>0.5</factor>
+  <center>
+   <x-m>-2.372</x-m>
+   <y-m>-2.71</y-m>
+   <z-m>0.0014</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>leftprop</object-name>
+  <condition>
+   <less-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>900</value>
+   </less-than>
+  </condition>
+ </animation>
+
+<animation>
+    <type>select</type>
+    <object-name>leftprop-disc</object-name>
+    <condition>
+      <greater-than>
+        <property>/engines/engine[0]/rpm</property>
+        <value>899</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+<animation>
+  <type>spin</type>
+  <object-name>rightprop</object-name>
+  <object-name>rightspinner</object-name>
+  <object-name>rightprop-disc</object-name>
+  <property>engines/engine[0]/rpm</property>
+  <factor>0.5</factor>
+  <center>
+   <x-m>-2.372</x-m>
+   <y-m>2.71</y-m>
+   <z-m>0.0014</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>rightprop</object-name>
+  <condition>
+   <less-than>
+    <property>engines/engine[1]/rpm</property>
+    <value>900</value>
+   </less-than>
+  </condition>
+ </animation>
+
+<animation>
+    <type>select</type>
+    <object-name>rightprop-disc</object-name>
+    <condition>
+      <greater-than>
+        <property>/engines/engine[1]/rpm</property>
+        <value>899</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>leftbomb-baydoor</object-name>
+  <property>sim/multiplay/generic/float[16]</property>   
+  <factor>-70</factor>
+  <center>
+   <x-m> -0.20</x-m>
+   <y-m>-0.50</y-m>
+   <z-m>-0.801</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>rightbomb-baydoor</object-name>
+  <property>sim/multiplay/generic/float[16]</property>  
+  <factor>70</factor>
+  <center>
+   <x-m> -0.20</x-m>
+   <y-m>0.50</y-m>
+   <z-m>-0.801</z-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+
+  <!-- animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>leftwing</object-name>
+    <object-name>rightwing</object-name>
+    <object-name>righteng</object-name>
+    <object-name>lefteng</object-name>
+    <object-name>leftaileron</object-name>
+    <object-name>rightaileron</object-name>
+    <object-name>leftoutflap</object-name>
+    <object-name>rightoutflap</object-name>
+    <object-name>leftinflap</object-name>
+    <object-name>rightinflap</object-name>
+    <object-name>leftgeardoorl</object-name>
+    <object-name>leftgeardoorr</object-name>
+    <object-name>rightgeardoorl</object-name>
+    <object-name>rightgeardoorr</object-name>
+    <object-name>reardoor</object-name>
+    <object-name>frontdoor</object-name>
+    <object-name>leftstab</object-name>
+    <object-name>leftstab.001</object-name>
+    <object-name>leftelev</object-name>
+    <object-name>rightelev</object-name>
+    <object-name>Cockpit</object-name>
+    <object-name>cockpitdoor</object-name>
+    <object-name>cowlflap0.L</object-name>
+    <object-name>cowlflap1.L</object-name>
+    <object-name>cowlflap2.L</object-name>
+    <object-name>cowlflap3.L</object-name>
+    <object-name>cowlflap4.L</object-name>
+    <object-name>cowlflap5.L</object-name>
+    <object-name>cowlflap6.L</object-name>
+    <object-name>rudder</object-name>
+    <object-name>turret</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>blenhiem1.png</texture>
+  </animation -->
+
+
+</PropertyList>

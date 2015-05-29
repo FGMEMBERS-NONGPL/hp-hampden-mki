@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AirSpeed -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/asi.xml</path>
+    <offsets>
+      <x-m>  -2.020 </x-m>
+      <y-m> -0.120 </y-m>
+      <z-m>  0.834 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Ai -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/attitude.xml</path>
+    <offsets>
+      <x-m>  -2.020 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.834 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Altimeter -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/Altimeter.xml</path>
+    <offsets>
+      <x-m>  -2.020 </x-m>
+      <y-m> -0.120 </y-m>
+      <z-m>  0.693 </z-m>
+    </offsets>
+  </model>
+
+
+  <!-- Turn -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/Turn.xml</path>
+    <offsets>
+      <x-m>  -2.020 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  0.693 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/vsi.xml</path>
+    <offsets>
+      <x-m>  -2.020 </x-m>
+      <y-m>  0.120 </y-m>
+      <z-m>  0.693 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- Clock -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/Clock.xml</path>
+    <offsets>
+      <x-m>  -2.020 </x-m>
+      <y-m>  0.12 </y-m>
+      <z-m>  0.834 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Compass -->
+  <model>
+    <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/compass-p11.xml</path>
+    <offsets>
+      <x-m> -1.985 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.36 </z-m>
+    </offsets>
+  </model>
+
+<!-- fuel tank left -->
+  <!-- model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/fuel-left.xml</path>
+    <offsets>
+      <x-m> -2.233 </x-m>
+      <y-m> 0.290 </y-m>
+      <z-m> 0.334 </z-m>
+    </offsets>
+  </model -->
+
+<!-- fuel tank center -->
+  <!-- model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/fuel-center.xml</path>
+    <offsets>
+      <x-m> -2.233 </x-m>
+      <y-m> 0.350 </y-m>
+      <z-m> 0.334 </z-m>
+    </offsets>
+  </model -->
+
+<!-- fuel tank right -->
+  <!-- model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/fuel-right.xml</path>
+    <offsets>
+      <x-m> -2.233 </x-m>
+      <y-m> 0.350 </y-m>
+      <z-m> 0.334 </z-m>
+    </offsets>
+  </model -->
+
+  <!-- RPM -->
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/eng-rev-p.xml</path>
+    <offsets>
+      <x-m> -2.0278 </x-m>
+      <y-m> 0.362 </y-m>
+      <z-m> 0.538 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/eng-rev-s.xml</path>
+    <offsets>
+      <x-m> -2.0278 </x-m>
+      <y-m> 0.406 </y-m>
+      <z-m> 0.538 </z-m>
+    </offsets>
+  </model>
+
+<!-- Engine manifold pressure -->
+
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/boost-p.xml</path>
+    <offsets>
+      <x-m> -2.0276 </x-m>
+      <y-m> 0.425 </y-m>
+      <z-m> 0.441 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/boost-s.xml</path>
+    <offsets>
+      <x-m> -2.0276 </x-m>
+      <y-m>  0.347 </y-m>
+      <z-m> 0.441 </z-m>
+    </offsets>
+  </model>
+
+<!-- Engine temperature -->
+
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/eng-temp-p.xml</path>
+    <offsets>
+      <x-m> -2.243 </x-m>
+      <y-m> -0.110 </y-m>
+      <z-m> 0.409 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/eng-temp-s.xml</path>
+    <offsets>
+      <x-m> -2.243 </x-m>
+      <y-m> -0.350 </y-m>
+      <z-m> 0.409 </z-m>
+    </offsets>
+  </model>
+
+<!-- Engine oil temperature -->
+
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/oil-temp-p.xml</path>
+    <offsets>
+      <x-m> -2.243 </x-m>
+      <y-m> -0.201 </y-m>
+      <z-m> 0.410 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/oil-temp-s.xml</path>
+    <offsets>
+      <x-m> -2.243 </x-m>
+      <y-m> -0.260 </y-m>
+      <z-m> 0.410 </z-m>
+    </offsets>
+  </model>
+
+<!-- Engine oil pressure -->
+
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/oil-press-p.xml</path>
+    <offsets>
+      <x-m> -2.243 </x-m>
+      <y-m> -0.158 </y-m>
+      <z-m> 0.410 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/oil-press-s.xml</path>
+    <offsets>
+      <x-m> -2.243 </x-m>
+      <y-m> -0.302 </y-m>
+      <z-m> 0.410 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right Hand Slip -->
+  <!-- model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/Slip.xml</path>
+    <offsets>
+      <x-m> -2.233 </x-m>
+      <y-m> 0.29 </y-m>
+      <z-m> -0.330 </z-m>
+    </offsets>
+  </model -->
+
+<!-- navigation light switch -->
+  <!-- model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/navswitch.xml</path>
+    <offsets>
+      <x-m> -2.233 </x-m>
+      <y-m> -0.228 </y-m>
+      <z-m> 0.397 </z-m>
+    </offsets>
+  </model -->
+
+<!-- landing light switch -->
+  <!-- model>
+  <path>Aircraft/hp-hampden-mki/Models/Panel/Instruments/landingswitch.xml</path>
+    <offsets>
+      <x-m> -2.233 </x-m>
+      <y-m> -0.275 </y-m>
+      <z-m> 0.397 </z-m>
+    </offsets>
+  </model -->
+
+  
+</PropertyList>
